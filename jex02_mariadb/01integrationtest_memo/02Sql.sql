@@ -96,4 +96,3 @@ alter table tbl_user add column
   
 alter table tbl_user 
   add column sessionlimit timestamp;
-[출처] MYSQL SQL입니다. (구멍가게코딩단) | 작성자 쿠키
