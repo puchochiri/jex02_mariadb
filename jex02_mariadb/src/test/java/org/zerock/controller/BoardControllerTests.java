@@ -11,6 +11,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
+import org.zerock.domain.Criteria;
 
 import lombok.Setter;
 import lombok.extern.log4j.Log4j2;
@@ -61,7 +62,10 @@ public class BoardControllerTests {
 				MockMvcRequestBuilders.get("/board/list")
 				.param("pageNum", "2")
 				.param("amount", "50")
-				.param("title", "test"))
+				.param("keyword", "새로")
+				.param("type", "TC")
+				)
+				
 				.andReturn().getModelAndView().getModelMap());
 	}
 	

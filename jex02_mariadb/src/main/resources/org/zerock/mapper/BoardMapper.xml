@@ -8,7 +8,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<!-- getList 실행 -->
 	/* getList */
 	<![CDATA[
-	select * from tbl_board where bno > 0
+	select * from tbl_board
 	]]>
 	</select>
 
@@ -70,7 +70,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		select count(*) from tbl_board 
 		where
 		<include refid="criteria"></include>
-		bno <![CDATA[>]]> 0
+		
 	</select>
 		
 		<sql id="criteria">
