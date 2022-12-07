@@ -68,9 +68,9 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<!-- getTotalCount 실행 -->
 			/* getTotalCount */
 		select count(*) from tbl_board 
-		where 
+		where
 		<include refid="criteria"></include>
-		bno > 0
+		bno <![CDATA[>]]> 0
 	</select>
 		
 		<sql id="criteria">

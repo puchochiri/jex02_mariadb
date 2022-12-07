@@ -26,8 +26,7 @@ public class JDBCTests {
 				DriverManager.getConnection(
 						"jdbc:mariadb://localhost:3306/book_ex",
 						"root",
-						// "1234"
-						"pucho8934!"
+						"1234"
 						)){
 			
 			log.info(con);

@@ -24,13 +24,10 @@ public class RootConfig {
 		hikariConfig.setDriverClassName("net.sf.log4jdbc.sql.jdbcapi.DriverSpy");
 		hikariConfig.setJdbcUrl("jdbc:log4jdbc:mariadb://localhost:3306/book_ex");
 		
-		hikariConfig.setUsername("root");
-		// 회사
-		hikariConfig.setPassword("pucho8934!");
-		// 집
+//		hikariConfig.setUsername("root");
 //		hikariConfig.setPassword("1234");
-//		hikariConfig.setUsername("book_ex");
-//		hikariConfig.setPassword("book_ex");
+		hikariConfig.setUsername("book_ex");
+		hikariConfig.setPassword("book_ex");
 		
 		HikariDataSource dataSource = new HikariDataSource(hikariConfig);
 		

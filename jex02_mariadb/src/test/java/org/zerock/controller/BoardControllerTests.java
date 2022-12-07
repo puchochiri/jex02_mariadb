@@ -60,7 +60,8 @@ public class BoardControllerTests {
 		log.info(mockMvc.perform(
 				MockMvcRequestBuilders.get("/board/list")
 				.param("pageNum", "2")
-				.param("amount", "50"))
+				.param("amount", "50")
+				.param("title", "test"))
 				.andReturn().getModelAndView().getModelMap());
 	}
 	
